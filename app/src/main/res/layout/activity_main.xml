@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.moviles.sgogaleano.dior_asistente.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logodior" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registro de Pedidos"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnOpcionRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Pedido"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnOpcionEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Pedido"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnCrearCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Cliente"
+        android:onClick="onClick"/>
+
+</LinearLayout>

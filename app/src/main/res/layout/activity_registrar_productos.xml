@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:hint="Para: "
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/campoNombreCliente"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:hint="Cliente de prueba"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/campoNitCliente"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:hint="Nit"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir producto"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/campoIdPedido"
+            android:layout_width="81dp"
+            android:layout_height="30dp"
+            android:hint="Código Producto"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/campoFecha"
+            android:layout_width="81dp"
+            android:layout_height="30dp"
+            android:hint="Fecha"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/campoIdProducto"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:hint="Código Producto"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnBuscarProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClick"
+            android:text="Buscar"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/campoNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción Producto"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="P. Unit [$]: "
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/campoPrecUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:hint="Cant: "
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/campoCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnAgregarPdto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClick"
+            android:text="Añadir al Pedido"
+            android:textSize="15sp" />
+        <!--
+        <Button
+            android:id="@+id/btnBorrarPdto"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClick"
+            android:text="Cancelar"
+            android:textSize="15sp"/>
+        -->
+        <WebView
+            android:id="@+id/bdGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"></WebView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedido Actual:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnFinProductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="100dp"
+            android:onClick="onClick"
+            android:text="Finalizar"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:headerDividersEnabled="false"
+        android:visibility="visible" />
+
+
+</LinearLayout>
